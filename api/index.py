@@ -57,9 +57,9 @@ if __name__ == "__main__":
 
         if not existing_movie:
             movies_to_add = [
-                Movie(name='Despicable Me1', length = '1h 35m', path = '/images/Despicableme1.png'),
-                Movie(name='Despicable Me2', length = '1h 38m', path = '/images/Despicableme2.jpg'),
-                Movie(name='Rise of Gru', length = '1h 28m', path = '/images/RiseOfGru.jpg')
+                Movie(name='Despicable Me1', length = '1h 35m', path = r'C:\Users\enzoy\OneDrive\Documents\coding\Minion data\api\images\Despicableme1.png'),
+                Movie(name='Despicable Me2', length = '1h 38m', path = r'C:\Users\enzoy\OneDrive\Documents\coding\Minion data\api\images\Despicableme2.jpg'),
+                Movie(name='Rise of Gru', length = '1h 28m', path = r'C:\Users\enzoy\OneDrive\Documents\coding\Minion data\api\images\RiseOfGru.jpg')
             ]
             db.session.add_all(movies_to_add)
             db.session.commit()
